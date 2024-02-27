@@ -1,0 +1,17 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+header img {
+    height: 35px;
+}
+
+.container {
+    display: flex;
+}
+
+form input {
+    flex-direction: row;
+}
