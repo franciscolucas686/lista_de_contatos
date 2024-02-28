@@ -3,43 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de contato</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
+    <title>Lista de contato</title>
 </head>
 <body>
     <header>
-        <img src="images/telefone.png" alt="Ícone de telefone">
+        <img src="images/phone-icon.svg" alt="Ícone de telefone">
         <h1>Lista de contatos</h1>
     </header>
     <div class="container">
-        <form>
-            <input type="text" required placeholder="Nome">
-            <input type="number" required placeholder="(DDD) + Telefone">
+        <form id="form-contato">
+            <h2>Insira seu contato</h2>
+            <div class="input-nome">
+                <label for="nome">Nome</label>
+                <input id="nome" type="text" required>
+            </div>
+            
+            <div class="input-telefone">
+                <label for="telefone">(DDD) + Telefone</label>
+                <input id="telefone" type="number" maxlength="11">
+            </div>
+            
             <button type="submit">Cadastrar contato</button>
         </form>
-        <table>
-            <thead>
-                <tr>
-                    <th>
-                        Nome
-                    </th>
-                    <th>
-                        Telefone
-                    </th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Francisco Lucas</td>
-                    <td>(15)98819-3239</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td>N° de contatos</td>
-                </tr>
-            </tfoot>
-        </table>
+        <div class="tabela">
+            <table cellspacing = "0">
+                <thead>
+                    <tr>
+                        <th>
+                            Nome
+                        </th>
+                        <th>
+                            Telefone
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Francisco Lucas</td>
+                        <td>(15) 98819-3239</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>N° de contatos</td>
+                        <td>1</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
     </div>
+    <script src="main.js"></script>
 </body>
 </html>
