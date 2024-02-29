@@ -24,7 +24,7 @@
             
             <div class="input-telefone">
                 <label for="telefone">(DDD) + Telefone</label>
-                <input id="telefone" type="number" maxlength="11">
+                <input id="telefone" required type="number">
             </div>
             
             <button type="submit">Cadastrar contato</button>
@@ -43,14 +43,14 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Francisco Lucas</td>
-                        <td>(15) 98819-3239</td>
+                        <td></td>
+                        <td></td>
                     </tr>
                 </tbody>
                 <tfoot>
                     <tr>
                         <td>N° de contatos</td>
-                        <td>1</td>
+                        <td id="numero-total-contatos">0</td>
                     </tr>
                 </tfoot>
             </table>
